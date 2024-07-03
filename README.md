@@ -1,7 +1,7 @@
 # Ez-Blue - The Blue Zone Easy
 ## Ez-Gateway-Services
 
-Ez-Gateway é um API Gateway baseado no Spring Cloud Gateway que roteia solicitações para os microserviços `Ez-Client-Services` e `Ez-Blue-Services`.
+Ez-Gateway-Services é um API Gateway baseado no Spring Cloud Gateway que roteia solicitações para os microserviços `Ez-Client-Services` e `Ez-Blue-Services`.
 
 ## Intenção
 
@@ -19,8 +19,8 @@ O objetivo deste serviço é atuar como ponto de entrada único para todas as so
 
 1. Clone o repositório:
 ```sh
-git clone <URL-DO-REPOSITORIO>
-cd Ez-Gateway-Server
+git clone https://github.com/4ADJT/Ez-Gateway-Services.git
+cd Ez-Gateway-Services
 ```
 
 2. Compile e execute o projeto
@@ -32,13 +32,13 @@ mvn spring-boot:run
 
 1. Compile o projeto e crie a imagem Docker:
 ```sh
-docker build -t ez-gateway-server .
+docker build -t ez-gateway-services .
 ```
 
 2. Execute o container:
 ```sh
-docker run -p 8761:8761 ez-gateway-server
+docker run -p 8080:8080 ez-gateway-services
 ```
 
 ## Configuração
-A configuração do Gateway Services pode ser encontrada no arquivo application.properties na pasta src/main/resources.
+A configuração do Ez-Gateway-Services pode ser encontrada no arquivo application.properties na pasta src/main/resources.
