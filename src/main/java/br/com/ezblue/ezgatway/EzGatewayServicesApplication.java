@@ -16,9 +16,9 @@ public class EzGatewayServicesApplication {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("ez_client_service", r -> r.path("/clients/**")
+                .route("ez_client_service", r -> r.path("/client/**")
                         .uri("lb://EZ-CLIENT-SERVICES"))
-                .route("ez_blue_service", r -> r.path("/locations/**")
+                .route("ez_blue_service", r -> r.path("/ez-management/**")
                         .uri("lb://EZ-BLUE-SERVICES"))
                 .build();
     }
